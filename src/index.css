@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: "Poppins", sans-serif;
+  font-family: "Public Sans", sans-serif;
+}
+
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+}
+
+.hover\:prose-headings\:underline :is(:where(a)):hover {
+  text-decoration: underline;
+}
